@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow Advisor - Orientação que inspira!</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/button-effects.css">
+    <link rel="stylesheet" href="css/hero-background.css">
+    <link rel="stylesheet" href="css/hero-styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+   <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Follow Advisor"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-i18n="nav-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-i18n="nav-about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos" data-i18n="nav-services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#presence" data-i18n="nav-presence">Presence</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cases" data-i18n="nav-cases">Cases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#diferenciais" data-i18n="nav-advantages">Advantages</a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#team" data-i18n="nav-team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato" data-i18n="nav-contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- AÇÕES DO HEADER: telefone, WhatsApp, [Academy + Follow IA], Client Access -->
+                <div class="header-actions d-flex align-items-center gap-3">
+
+                    <a href="tel:+5519984088833" class="phone-link">
+                        <i class="fas fa-phone-alt"></i>
+                    </a>
+
+                    <!-- GRUPO CENTRAL: Academy + Follow IA (bandeiras ficam acima deste bloco) -->
+                    <div class="group-af d-flex align-items-center gap-2 position-relative">
+
+                        <!-- Bandeiras (SVG) POSICIONADAS ACIMA DO GRUPO -->
+                        <div class="lang-row d-flex gap-2">
+                            <a href="#" class="lang-flag lang-switch active" data-lang="pt" aria-label="Português" title="Português">
+                                <!-- BR SVG -->
+                                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                                    <defs><clipPath id="clip-br"><rect width="24" height="24" rx="12"/></clipPath></defs>
+                                    <g clip-path="url(#clip-br)">
+                                        <rect width="24" height="24" fill="#229e45"/>
+                                        <polygon points="12,4 3,12 12,20 21,12" fill="#F8C300"/>
+                                        <circle cx="12" cy="12" r="4.4" fill="#2B49A3"/>
+                                        <path d="M6.4,11.3A10,10,0,0,1,17.6,15" fill="none" stroke="#fff" stroke-width=".9"/>
+                                    </g>
+                                </svg>
+                                <span class="visually-hidden">Português</span>
+                            </a>
+
+                            <a href="#" class="lang-flag lang-switch" data-lang="en" aria-label="English" title="English">
+                                <!-- US SVG -->
+                                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                                    <defs><clipPath id="clip-us"><rect width="24" height="24" rx="12"/></clipPath></defs>
+                                    <g clip-path="url(#clip-us)">
+                                        <rect width="24" height="24" fill="#b22234"/>
+                                        <g fill="#fff">
+                                            <rect y="2"  width="24" height="2"/>
+                                            <rect y="6"  width="24" height="2"/>
+                                            <rect y="10" width="24" height="2"/>
+                                            <rect y="14" width="24" height="2"/>
+                                            <rect y="18" width="24" height="2"/>
+                                            <rect y="22" width="24" height="2"/>
+                                        </g>
+                                        <rect width="10.4" height="10.8" fill="#3c3b6e"/>
+                                        <g fill="#fff">
+                                            <circle cx="1.3" cy="1.2" r=".35"/>
+                                            <circle cx="3.1" cy="1.2" r=".35"/>
+                                            <circle cx="4.9" cy="1.2" r=".35"/>
+                                            <circle cx="6.7" cy="1.2" r=".35"/>
+                                            <circle cx="8.5" cy="1.2" r=".35"/>
+                                            <circle cx="2.2" cy="2.2" r=".35"/>
+                                            <circle cx="4.0" cy="2.2" r=".35"/>
+                                            <circle cx="5.8" cy="2.2" r=".35"/>
+                                            <circle cx="7.6" cy="2.2" r=".35"/>
+                                            <circle cx="1.3" cy="3.2" r=".35"/>
+                                            <circle cx="3.1" cy="3.2" r=".35"/>
+                                            <circle cx="4.9" cy="3.2" r=".35"/>
+                                            <circle cx="6.7" cy="3.2" r=".35"/>
+                                            <circle cx="8.5" cy="3.2" r=".35"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="visually-hidden">English</span>
+                            </a>
+                        </div>
+                    
+
+                                            <a href="#" class="lang-flag lang-switch" data-lang="es" aria-label="Español" title="Español">
+                            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                                <defs>
+                                    <clipPath id="clip-es-new">
+                                        <rect width="24" height="24" rx="12"/>
+                                    </clipPath>
+                                </defs>
+                                <g clip-path="url(#clip-es-new)">
+                                    <rect width="24" height="6" fill="#aa151b"/>
+                                    <rect y="6" width="24" height="12" fill="#ffc400"/>
+                                    <rect y="18" width="24" height="6" fill="#aa151b"/>
+
+                                    <g transform="translate(4.5 9)" fill="#333" stroke="#333" stroke-width="0.3">
+                                        <rect x="0" y="0" width="0.7" height="6" rx="0.3" ry="0.3" fill="#fff" stroke="#333" stroke-width="0.2"/>
+                                        <rect x="7.8" y="0" width="0.7" height="6" rx="0.3" ry="0.3" fill="#fff" stroke="#333" stroke-width="0.2"/>
+                                        <path d="M1 0.5 C1.5 0.2, 2.5 0.2, 3 0.5 L4 0.5 L4.5 1 L4 1.5 C3.5 1.8, 2.5 1.8, 2 1.5 Z" fill="#fff" stroke="#333" stroke-width="0.2" transform="translate(-1 0)"/>
+                                        <path d="M7 0.5 C7.5 0.2, 8.5 0.2, 9 0.5 L10 0.5 L10.5 1 L10 1.5 C9.5 1.8, 8.5 1.8, 8 1.5 Z" fill="#fff" stroke="#333" stroke-width="0.2" transform="translate(-1 0)"/>
+
+                                        <rect x="2.5" y="0.5" width="4" height="5" fill="#fff" stroke="#333" stroke-width="0.2"/>
+                                        <path d="M3.5 1.5 L4.5 1.5 L4.5 2.5 L3.5 2.5 Z" fill="#aa151b"/> <path d="M3.5 3.5 L4.5 3.5 L4.5 4.5 L3.5 4.5 Z" fill="#4b86c4"/> </g>
+                                </g>
+                            </svg>
+                            <span class="visually-hidden">Español</span>
+                        </a>
+                        <!-- /bandeiras -->
+
+                        <!-- Botões do grupo -->
+                        <a href="#" class="btn btn-outline-primary btn-sm" data-i18n="btn-academy">Academy</a>
+                        <a href="#" class="btn btn-outline-primary btn-sm" data-i18n="btn-follow-ia">Follow IA</a>
+                    </div>
+
+                    <a href="#" class="btn btn-primary btn-sm" data-i18n="btn-client-access">Client Access</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+</div>
+                                  
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Principal com fundo dinâmico -->
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 id="hero-title" data-i18n="hero-title">Orientação que inspira!</h1>
+                    <p id="hero-subtitle" class="lead" data-i18n="hero-subtitle">Consultoria e assessoria especializada em Qualidade e Supply-Chain</p>
+                    <a href="#contato" id="hero-button" class="btn btn-primary btn-lg" data-i18n="hero-button">Entre em Contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-i18n="about-title">Sobre a Follow Advisor</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="lead" data-i18n="about-description">A Follow Advisor é uma empresa de consultoria e assessoria em Qualidade e Supply-Chain...</p>
+                    <!-- Bloco de Diferenciais -->
+                    <div class="about-extra">
+                    <p>
+                        Na Follow, você conta com um time de especialistas com mais de 20 anos de experiência em:
+                    </p>
+                    <ul>
+                        <li>✅ Transporte de produtos para saúde em Geral</li>
+                        <li>✅ Armazéns e operações logísticas</li>
+                        <li>✅ Projetos de Supply Chain</li>
+                    </ul>
+
+                    <p><strong>🔹 O que nos diferencia?</strong></p>
+                    <ul>
+                        <li>✅ Consultoria fácil e transparente em todos os processos</li>
+                        <li>✅ Ferramentas tecnológicas que simplificam seu dia a dia</li>
+                        <li>✅ Análise detalhada da sua empresa e processos internos</li>
+                    </ul>
+                    </div>
+
+                    
+                    <div class="mission-vision-values mt-4">
+                        <div class="mb-4">
+                            <h3 data-i18n="mission-title">Missão</h3>
+                            <p data-i18n="mission-text">Oferecer serviços de consultoria e assessoria para garantir qualidade nos processos...</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 data-i18n="vision-title">Visão</h3>
+                            <p data-i18n="vision-text">Desenvolver os melhores profissionais em soluções avançadas na cadeia logística.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 data-i18n="values-title">Valores</h3>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> <span data-i18n="value-1">Responsabilidade</span></li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> <span data-i18n="value-2">Transparência</span></li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> <span data-i18n="value-3">Eficiência</span></li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i> <span data-i18n="value-4">Ética</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="stats-card">
+                                <h3 class="stats-number">+90</h3>
+                                <p class="stats-text" data-i18n="stats-anvisa">Empresas homologadas na ANVISA</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="stats-card">
+                                <h3 class="stats-number"> +70</h3>
+                                <p class="stats-text" data-i18n="stats-pharma">Indústrias farmacêuticas atendidas</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="stats-card">
+                                <h3 class="stats-number"> +1200</h3>
+                                <p class="stats-text" data-i18n="stats-audits">Auditorias de Qualidade realizadas</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="stats-card">
+                                <h3 class="stats-number"> +120.000</h3>
+                                <p class="stats-text" data-i18n="stats-tons">Toneladas de produtos importados</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="stats-card">
+                                <h3 class="stats-number"> +6500 </h3>
+                                <p class="stats-text" data-i18n="stats-vehicles">Veículos sob gestão de Qualidade</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="stats-card">
+                                <h3 class="stats-number">+R$ 500M /mês</h3>
+                                <p class="stats-text" data-i18n="stats-routes">Cargas com qualificação de rotas mensais</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossos Serviços -->
+   <section id="servicos" class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <h2 class="section-title" data-i18n="services-title">Soluções Customizadas</h2>
+                <p class="lead" data-i18n="services-subtitle">Atendimento em Português, Inglês e Espanhol (incluindo relatórios sob demanda)</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- 1 -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/icon-regulatory-removebg-preview.png" alt="Assuntos Regulatórios">
+                    </div>
+                    <h3 data-i18n="service-regulatory-title">Assuntos Regulatórios</h3>
+                    <p data-i18n="service-regulatory-desc">Assessoria completa em licenciamento...</p>
+                    <!-- Caixinha oculta -->
+                    <div class="service-extra d-none" data-i18n-html="service-regulatory-more">
+                        <p>
+                            <p class="section-title">Na Follow Advisor oferecemos uma assessoria completa em assuntos regulatórios, atuando de ponta a ponta no processo de licenciamento, certificações e adequação às normas nacionais e internacionais.</p>
+                            <p class="section-title">Nosso time é especializado em regulamentações da ANVISA, MAPA, ANTT, Receita Federal, órgãos estaduais e internacionais, garantindo segurança jurídica e agilidade no seu negócio.</p>
+                            <p class="section-title">Auxiliamos desde a elaboração e revisão documental até a interlocução direta com os órgãos reguladores, sempre alinhando os requisitos legais às necessidades operacionais da sua empresa. </p>
+                            <b>Benefícios para sua empresa:</b>
+                            <ul>
+                                <li>Redução de riscos de penalidades e não conformidades.</li>
+                                <li>Aceleração no tempo de aprovação de processos. </li>
+                                <li>Planejamento regulatório integrado às metas estratégicas. </li>
+                                <li>Tranquilidade para focar no crescimento do negócio. </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary btn-sm service-details-btn" data-i18n="service-more">Saiba mais</a>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/icon-qualification-removebg-preview.png" alt="Estudos de Qualificação">
+                    </div>
+                    <h3 data-i18n="service-qualification-title">Estudos de Qualificação</h3>
+                    <p data-i18n="service-qualification-desc">Qualificação térmica e validação...</p>
+                    <!-- Caixinha oculta -->
+                    <div class="service-extra d-none" data-i18n-html="service-qualification-more">
+                        <p class="section-title">Realizamos a Mentoria de Qualificação térmica e Validação dos sistemas computadorizados dos Softwares utilizados em todo processo de rastreabilidade e integridade dos produtos destinados a saúde.</p>
+                        <p class="section-title">Nossos estudos envolvem mapas térmicos, qualificação de transporte, armazenagem, equipamentos e processos críticos, aplicando metodologias reconhecidas internacionalmente (BPx, OMS, ISO, IATA, FDA, entre outras).</p>
+                        <b>O que entregamos aos clientes:</b>
+                        <ul>
+                            <li>Relatórios técnicos completos e auditáveis.</li>
+                            <li>Confiabilidade nos processos de cadeia fria e produtos sensíveis.</li>
+                            <li>Atendimento aos requisitos exigidos em auditorias nacionais e internacionais.</li>
+                            <li>Maior segurança e rastreabilidade para o consumidor final.</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary btn-sm service-details-btn" data-i18n="service-more">Saiba mais</a>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/icon-supplychain-removebg-preview.png" alt="Supply Chain e Comércio Exterior">
+                    </div>
+                    <h3 data-i18n="service-supplychain-title">Supply Chain e Comércio Exterior</h3>
+                    <p data-i18n="service-supplychain-desc">Desenvolvimento e otimização de cadeias...</p>
+                    <!-- Caixinha oculta -->
+                    <div class="service-extra d-none" data-i18n-html="service-supplychain-more">
+                        <p class="section-title">Apoiamos empresas no desenvolvimento, otimização e gestão estratégica de cadeias logísticas nacionais e internacionais, integrando processos de importação, exportação, armazenagem e transporte.</p>
+                        <p class="section-title">Nosso diferencial é unir experiência prática em supply chain com visão estratégica de negócios, proporcionando eficiência operacional, redução de custos e atendimento às normas globais de comércio exterior. </p>
+                        <b>Áreas de atuação: </b>
+                        <ul>
+                            <li>Planejamento e desenho da cadeia logística (S&OP, DDMRP, WMS, TMS). </li>
+                            <li>Gestão de importação e exportação, incluindo regimes especiais.</li>
+                            <li>Estratégias de internacionalização e abertura de novos mercados. </li>
+                            <li>Otimização de custos logísticos e gestão de fornecedores globais. </li>
+                        </ul>
+                        <b>Resultados esperados:</b>
+                        <ul>
+                            <li>Cadeias mais ágeis, eficientes e resilientes. </li>
+                            <li>Redução de custos totais da operação. </li>
+                            <li>Maior competitividade no mercado nacional e internacional. /li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary btn-sm service-details-btn" data-i18n="service-more">Saiba mais</a>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/icon-logistics-removebg-preview.png" alt="Logística, Transportes e Armazenagem">
+                    </div>
+                    <h3 data-i18n="service-logistics-title">Logística, Transportes e Armazenagem</h3>
+                    <p data-i18n="service-logistics-desc">Assessoria completa em operações logísticas...</p>
+                    <!-- Caixinha oculta -->
+                    <div class="service-extra d-none" data-i18n-html="service-logistics-more">
+                        <p class="section-title">Oferecemos soluções completas em logística, transporte e armazenagem, garantindo eficiência operacional, segurança dos produtos e conformidade com normas nacionais e internacionais. </p>
+                        <p class="section-title"> Atuamos desde o planejamento estratégico até a execução das operações, adaptando cada processo à realidade do cliente. </p>
+                        <b>Nossas especialidades incluem: </b>
+                        <ul>
+                            <li>Gestão de armazéns (ambientais, refrigerados e produtos especiais). </li>
+                            <li>Operações de transporte rodoviário, aéreo e internacional.  </li>
+                            <li>Monitoramento de indicadores (custos, sinistros, prazos, produtividade). </li>
+                            <li>Implementação de WMS, TMS e processos automatizados. </li>
+                        </ul>
+                        <b>Resultados para sua empresa: </b>
+                        <ul>
+                            <li>Redução de custos logísticos. </li>
+                            <li>Aumento da produtividade operacional.  </li>
+                            <li>Segurança e rastreabilidade em todas as etapas da cadeia. </li>
+                            <li>Soluções escaláveis conforme o crescimento do negócio. </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary btn-sm service-details-btn" data-i18n="service-more">Saiba mais</a>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/icon-medical-removebg-preview.png" alt="Assessoria para Distribuidoras Médicas">
+                    </div>
+                    <h3 data-i18n="service-medical-title">Assessoria para Distribuidoras Médicas</h3>
+                    <p data-i18n="service-medical-desc">Consultoria especializada para distribuidoras...</p>
+                    <!-- Caixinha oculta -->
+                    <div class="service-extra d-none" data-i18n-html="service-medical-more">
+                        <p class="section-title">A Follow Advisor oferece consultoria especializada para distribuidoras de dispositivos médicos, hospitalares e produtos para saúde, com foco na adequação regulatória, eficiência logística e qualidade operacional. </p>
+                        <b>Principais entregas: </b>
+                        <ul>
+                            <li>Estruturação de processos para atender às exigências da ANVISA, MAPA e órgãos internacionais. </li>
+                            <li>Apoio em registro de produtos, licenciamento e certificações. </li>
+                            <li>Gestão da cadeia fria (cold chain) para medicamentos e insumos sensíveis.  </li>
+                            <li>Desenvolvimento de procedimentos padrão (POP) para auditorias.  </li>
+                        </ul>
+                        <b>Benefícios para o setor médico: </b>
+                        <ul>
+                            <li>Garantia de conformidade regulatória e segurança dos pacientes. </li>
+                            <li>Operações logísticas ágeis e rastreáveis. </li>
+                            <li>Redução de riscos em auditorias e inspeções.  </li>
+                            <li>Fortalecimento da reputação da empresa junto a clientes e órgãos fiscalizadores.  </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary btn-sm service-details-btn" data-i18n="service-more">Saiba mais</a>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/icon-quality-removebg-preview.png" alt="Qualidade">
+                    </div>
+                    <h3 data-i18n="service-quality-title">Qualidade</h3>
+                    <p data-i18n="service-quality-desc">Implementação e gestão de sistemas de qualidade...</p>
+                    <!-- Caixinha oculta -->
+                    <div class="service-extra d-none" data-i18n-html="service-quality-more">
+                        <p class="section-title">Somos especialistas na implementação e gestão de sistemas de qualidade e certificações, essenciais para empresas que desejam atuar com excelência em mercados competitivos. </p>
+                        <b>Áreas de atuação: </b>
+                        <ul>
+                            <li>Implantação de sistemas de gestão da qualidade (ISO, BPF, BPDA, entre outros). </li>
+                            <li>Desenvolvimento de manuais, POPs e listas mestras. </li>
+                            <li>Auditorias internas e externas, com plano de ação para não conformidades. </li>
+                            <li>Preparação para certificações nacionais e internacionais. </li>
+                        </ul>
+                        <b>O que sua empresa ganha: </b>
+                        <ul>
+                            <li>Confiabilidade e credibilidade perante clientes e órgãos reguladores. </li>
+                            <li>Processos internos padronizados e mais eficientes.  </li>
+                            <li>Melhoria contínua como parte da cultura organizacional.  </li>
+                            <li>Redução de falhas, retrabalhos e custos associados à má qualidade. </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary btn-sm service-details-btn" data-i18n="service-more">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- 7 -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/icon-training-removebg-preview.png" alt="Treinamento e Qualificação">
+                    </div>
+                    <h3 data-i18n="service-training-title">Treinamento e Qualificação</h3>
+                    <p data-i18n="service-training-desc">Programas de capacitação e desenvolvimento...</p>
+                    <!-- Caixinha oculta -->
+                    <div class="service-extra d-none" data-i18n-html="service-training-more">
+                        <p class="section-title">Oferecemos programas completos de capacitação e desenvolvimento de equipes técnicas e operacionais, alinhados às exigências regulatórias e às melhores práticas do mercado. </p>
+                        <p>Nossos treinamentos podem ser presenciais ou online, adaptados à realidade de cada cliente, cobrindo desde temas técnicos específicos (armazenagem, transporte, cadeia fria, POPs) até gestão, liderança e cultura de qualidade. </p>
+                        <b>O que entregamos: </b>
+                        <ul>
+                            <li>Treinamentos sob medida para equipes operacionais e de gestão. </li>
+                            <li>Certificados de participação reconhecidos para auditorias e compliance. </li>
+                            <li>Simulações práticas e estudo de casos reais. </li>
+                            <li>Desenvolvimento de habilidades técnicas e comportamentais. </li>
+                        </ul>
+                        <b>Resultados esperados: </b>
+                        <ul>
+                            <li>Profissionais mais capacitados e preparados para desafios diários. </li>
+                            <li>Redução de erros operacionais e retrabalhos.  </li>
+                            <li>Maior engajamento e retenção de talentos.  </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary btn-sm service-details-btn" data-i18n="service-more">Saiba mais</a>
+                </div>
+            </div>
+            <!-- 8 -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/icon-storage-removebg-preview.png" alt="Armazenagem e Distribuição">
+                    </div>
+                    <h3 data-i18n="service-storage-title">Armazenagem e Distribuição</h3>
+                    <p data-i18n="service-storage-desc">Soluções especializadas para armazenagem...</p>
+                    <!-- Caixinha oculta -->
+                    <div class="service-extra d-none" data-i18n-html="service-storage-more">
+                        <p class="section-title">Somos especialistas em soluções de armazenagem e distribuição de insumos farmacêuticos, hospitalares e alimentos, atendendo aos requisitos de segurança, rastreabilidade e conformidade regulatória. </p>
+                        <b>Nossas soluções incluem: </b>
+                        <ul>
+                            <li>Estruturação de operações de armazenagem (ambiente controlado, refrigerado ou congelado). </li>
+                            <li>Processos de recebimento, estocagem, separação, expedição e transporte. </li>
+                            <li>Gestão de cadeia fria (cold chain) com monitoramento contínuo de temperatura. </li>
+                            <li>Implementação de controles e relatórios auditáveis para inspeções. </li>
+                        </ul>
+                        <b>Vantagens para o cliente: </b>
+                        <ul>
+                            <li>Redução de perdas e avarias em produtos sensíveis. </li>
+                            <li>Operações mais ágeis e organizadas. </li>
+                            <li>Segurança total em todas as etapas da armazenagem e distribuição. </li>
+                            <li>Conformidade com ANVISA, MAPA e normas internacionais. </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary btn-sm service-details-btn" data-i18n="service-more">Saiba mais</a>
+                </div>
+            </div>
+            <!-- 9 -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/icon-foreigntrade-removebg-preview.png" alt="Consultoria de Comércio Exterior">
+                    </div>
+                    <h3 data-i18n="service-foreigntrade-title">Consultoria de Comércio Exterior</h3>
+                    <p data-i18n="service-foreigntrade-desc">Regimes especiais, otimização de custos...</p>
+                    <!-- Caixinha oculta -->
+                    <div class="service-extra d-none" data-i18n-html="service-foreigntrade-more">
+                        <p class="section-title">Apoiamos empresas em todas as etapas do comércio internacional, com foco em regimes aduaneiros especiais, redução de custos logísticos e segurança nos processos de importação e exportação. </p>
+                        <b>Serviços oferecidos: </b>
+                        <ul>
+                            <li>Gestão de regimes especiais (Ex-tarifário, Drawback, Recof, entre outros). </li>
+                            <li>Estruturação de processos de importação e exportação conforme normas da Receita Federal, OMC e órgãos anuentes. </li>
+                            <li>Planejamento tributário para reduzir custos e aumentar a competitividade. </li>
+                            <li>Consultoria estratégica para internacionalização de negócios. </li>
+                        </ul>
+                        <b>Benefícios para sua empresa: </b>
+                        <ul>
+                            <li>Operações de comércio exterior seguras e eficientes. </li>
+                            <li>Redução de custos tributários e logísticos. </li>
+                            <li>Maior agilidade em liberações aduaneiras. </li>
+                            <li>Suporte completo para expansão global. </li>
+                        </ul>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary btn-sm service-details-btn" data-i18n="service-more">Saiba mais</a>
+                </div>
+            </div>
+            <!-- 10 (Jurídico Corporativo) -->
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/icon-legal-removebg-preview.png" alt="Jurídico Corporativo">
+                    </div>
+                    <h3 data-i18n="service-legal-title">Jurídico Corporativo</h3>
+                    <p data-i18n="service-legal-desc">Softlanding com parceria em escritórios de atendimento presencial, projetos de compliance e risk mitigation para questões trabalhistas.</p>
+                    <!-- Caixinha oculta -->
+                    <div class="service-extra d-none" data-i18n-html="service-legal-more">
+                        <p class="section-title">A Follow Advisor, em parceria com escritórios jurídicos especializados, oferece suporte completo em jurídico corporativo, alinhando as práticas de compliance, governança e gestão de riscos às necessidades estratégicas da sua empresa. </p>
+                        <p class="section-title">Atuamos em projetos de softlanding, garantindo a segurança jurídica em processos de internacionalização, além de oferecer apoio especializado para empresas que buscam se estabelecer em novos mercados. </p>
+                        <b>Nossas soluções abrangem: </b>
+                        <ul>
+                            <li>Projetos de compliance corporativo e regulatório. </li>
+                            <li>Risk mitigation em questões trabalhistas e contratuais. </li>
+                            <li>Assessoria jurídica em operações societárias e comerciais. </li>
+                            <li>Atendimento presencial e personalizado por escritórios parceiros. </li>
+                        </ul>
+                        <b>Benefícios para o cliente: </b>
+                        <ul>
+                            <li>Redução de riscos legais e trabalhistas. </li>
+                            <li>Estruturação segura para expansão nacional e internacional. </li>
+                            <li>Aumento da confiança de investidores, clientes e parceiros. </li>
+                            <li>Suporte estratégico para tomada de decisão. </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-outline-primary btn-sm service-details-btn" data-i18n="service-more">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Modal de Serviço -->
+        <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="serviceModalLabel">Detalhes dfo Serviço</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="serviceModalBody"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <a href="#contato" class="btn btn-primary" data-bs-dismiss="modal">Solicitar Informações</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presença (duplicada no seu HTML – mantive, só marquei i18n) -->
+    <section id="presence" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-i18n="presence-title">Atendimento nacional e internacional</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="map-container text-center">
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="location-card">
+                                <h3 data-i18n="presence-brazil">Brasil</h3>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i> São Paulo</li>
+                                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i> Interior SP</li>
+                                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i> Brasília</li>
+                                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i> Itajaí</li>
+                                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i> Anápolis</li>
+                                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i> Rio de Janeiro</li>
+                                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i> Bahia</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="location-card">
+                                <h3 data-i18n="presence-international">Internacional</h3>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i> Miami (EUA)</li>
+                                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i> Cidade do México (México)</li>
+                                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i> Bogotá (Colômbia)</li>
+                                    <li><i class="fas fa-map-marker-alt text-primary me-2"></i> Buenos Aires (Argentina)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- col-lg-7 -->
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases de Sucesso -->
+<section id="cases" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center mb-5">
+        <h2 class="section-title" data-i18n="cases-title">Nossos Clientes</h2>
+        <p class="lead" data-i18n="cases-subtitle">Parcerias de sucesso em diversos setores</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 mb-5">
+        <ul class="nav nav-pills mb-4 justify-content-center" id="casesTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pharma-tab" data-bs-toggle="pill" data-bs-target="#pharma" type="button" role="tab" aria-controls="pharma" aria-selected="true" data-i18n="cases-pharma">Indústria Farmacêutica</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="agro-tab" data-bs-toggle="pill" data-bs-target="#agro" type="button" role="tab" aria-controls="agro" aria-selected="false" data-i18n="cases-agro">Agronegócio</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="logistics-tab" data-bs-toggle="pill" data-bs-target="#logistics" type="button" role="tab" aria-controls="logistics" aria-selected="false" data-i18n="cases-logistics">Logística</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="warehouses-tab" data-bs-toggle="pill" data-bs-target="#warehouses" type="button" role="tab" aria-controls="warehouses" aria-selected="false" data-i18n="cases-warehouses">Armazéns & Auditorias</button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="casesTabContent">
+
+          <!-- 📌 Indústria Farmacêutica -->
+          <div class="tab-pane fade show active" id="pharma" role="tabpanel" aria-labelledby="pharma-tab">
+            <div class="clients-grid">
+
+              <!-- Case 1 -->
+              <div class="case-card">
+                <div class="case-body">
+                  <h5 data-i18n="case1-title">Indústria Farmacêutica</h5>
+                  <div data-i18n-html="case1-html">
+                    <p><strong>Desafio:</strong> Uma multinacional farmacêutica buscava registrar seus produtos no Brasil, enfrentando barreiras regulatórias complexas junto à ANVISA, além da necessidade de estruturar sua operação local de forma eficiente e em conformidade.</p>
+                    <p><strong>Solução da Follow Advisor:</strong> Conduzimos o processo completo de registro de produtos junto às autoridades regulatórias, além de desenhar e executar uma estratégia de softlanding para a empresa no Brasil. Incluiu a estruturação societária, obtenção de licenças sanitárias e alinhamento com parceiros locais.</p>
+                    <p><strong>Resultados:</strong></p>
+                    <ul>
+                      <li>Registro aprovado em tempo reduzido em relação à média do mercado. </li>
+                      <li>Estrutura de operação local estabelecida sem riscos regulatórios. </li>
+                      <li>Redução de custos de entrada de aproximadamente 15% com processos otimizados. </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 📌 Agronegócio -->
+          <div class="tab-pane fade" id="agro" role="tabpanel" aria-labelledby="agro-tab">
+            <div class="clients-grid">
+
+              <!-- Case 8 -->
+              <div class="case-card">
+                <div class="case-body">
+                  <h5 data-i18n="case8-title">Agronegócio</h5>
+                  <div data-i18n-html="case8-html">
+                    <p><strong>Desafio:</strong> Um conglomerado do agronegócio precisava implementar um projeto de supply chain envolvendo 12.000 containers, operações em três portos, além da importação de máquinas e equipamentos em regime de ex-tarifário. O desafio incluía ainda a criação de um Centro de Serviços Compartilhados (CSC) para 7 empresas do grupo, em um projeto avaliado em R$ 2 bilhões e 24 meses de duração.</p>
+                    <p><strong>Solução da Follow Advisor:</strong> Desenvolvemos o desenho estratégico e a execução do supply chain, incluindo:</p>
+                    <ul>
+                      <li>Estruturação dos regimes aduaneiros especiais. </li>
+                      <li>Coordenação de importação com redução de carga tributária via ex-tarifário. </li>
+                      <li>Implantação do CSC de Supply Chain, padronizando processos, tecnologia e compliance. </li>
+                    </ul>
+                    <p><strong>Resultados:</strong></p>
+                    <ul>
+                      <li>Economia superior a R$ 200 milhões em tributos e eficiência logística. </li>
+                      <li>Aumento da visibilidade operacional em tempo real. </li>
+                      <li>Integração das 7 empresas em uma governança única de supply chain. </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 📌 Logística -->
+          <div class="tab-pane fade" id="logistics" role="tabpanel" aria-labelledby="logistics-tab">
+            <div class="clients-grid">
+
+              <!-- Case 2 -->
+              <div class="case-card">
+                <div class="case-body">
+                  <h5 data-i18n="case2-title">Logística</h5>
+                  <div data-i18n-html="case2-html">
+                    <p><strong>Desafio:</strong> Transferência e softlanding de fábrica internacional para o Brasil, localizada na região Sul, dentro de um prazo crítico de 18 meses.</p>
+                    <p><strong>Solução da Follow Advisor:</strong> Atuamos desde o planejamento fabril até a execução, englobando: licenciamento, cadeia de suprimentos, homologação de fornecedores locais e compliance regulatório.</p>
+                    <p><strong>Resultados:</strong></p>
+                    <ul>
+                      <li>Fábrica operando no prazo estabelecido. </li>
+                      <li>Cadeia de suprimentos nacional estruturada com redução de custos de importação. </li>
+                      <li>Operação integrada ao mercado local com atendimento às normas brasileiras. </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Case 3 -->
+              <div class="case-card">
+                <div class="case-body">
+                  <h5 data-i18n="case3-title">Transportadoras (Homologação 0 to Win)</h5>
+                  <div data-i18n-html="case3-html">
+                    <p><strong>Desafio:</strong> Uma transportadora precisava iniciar sua operação do zero, obtendo todas as licenças necessárias (ANVISA, órgãos ambientais e reguladores de classe de produtos) para atuar em transporte especializado.</p>
+                    <p><strong>Solução da Follow Advisor:</strong> Criamos o projeto 0 to Win, que incluiu:</p>
+                    <ul>
+                      <li>Estruturação documental e regulatória completa. </li>
+                      <li>Obtenção das licenças em tempo recorde. </li>
+                      <li>Definição de políticas de compliance e processos de qualidade. </li>
+                    </ul>
+                    <p><strong>Resultados:</strong></p>
+                    <ul>
+                      <li>Empresa habilitada em menos de 12 meses. </li>
+                      <li>Operação iniciada já com confiabilidade assegurada para clientes farmacêuticos e de healthcare. </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Case 4 -->
+              <div class="case-card">
+                <div class="case-body">
+                  <h5 data-i18n="case4-title">Transportadoras (Qualidade Assegurada)</h5>
+                  <div data-i18n-html="case4-html">
+                    <p><strong>Desafio:</strong> Uma transportadora precisava se tornar fornecedora homologada de indústrias farmacêuticas, atendendo padrões internacionais de qualidade e rastreabilidade.</p>
+                    <p><strong>Solução da Follow Advisor:</strong> Implementamos um sistema de Qualidade Assegurada, com:</p>
+                    <ul>
+                      <li>Procedimentos operacionais padrão (POPs). </li>
+                      <li>Sistema de rastreabilidade end-to-end. </li>
+                      <li>Treinamento de equipe em boas práticas. </li>
+                    </ul>
+                    <p><strong>Resultados:</strong></p>
+                    <ul>
+                      <li>Homologação em tempo reduzido por indústrias farmacêuticas. </li>
+                      <li>Reconhecimento como operador logístico de referência em qualidade. </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 📌 Armazéns & Auditorias -->
+          <div class="tab-pane fade" id="warehouses" role="tabpanel" aria-labelledby="warehouses-tab">
+            <div class="clients-grid">
+
+              <!-- Case 5 -->
+              <div class="case-card">
+                <div class="case-body">
+                  <h5 data-i18n="case5-title">Armazéns (Alimentos e Alergênicos)</h5>
+                  <div data-i18n-html="case5-html">
+                    <p><strong>Desafio:</strong> Uma multinacional de alimentos precisava homologar seu armazém no Brasil, instalando sistemas de qualidade, food defense e HACCP, com foco especial no controle de alergênicos.</p>
+                    <p><strong>Solução da Follow Advisor:</strong> Estruturamos um programa completo de qualidade e segurança:</p>
+                    <ul>
+                      <li>Implantação de HACCP e segregação de alergênicos. </li>
+                      <li>Sistema de food defense em conformidade internacional. </li>
+                      <li>Homologação perante clientes e órgãos regulatórios. </li>
+                    </ul>
+                    <p><strong>Resultados:</strong></p>
+                    <ul>
+                      <li>Certificação internacional em tempo recorde. </li>
+                      <li>Operação habilitada para exportação e fornecimento a grandes redes. </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Case 6 -->
+              <div class="case-card">
+                <div class="case-body">
+                  <h5 data-i18n="case6-title">Armazéns (Medicamentos)</h5>
+                  <div data-i18n-html="case6-html">
+                    <p><strong>Desafio:</strong> Implantar e homologar um armazém dedicado a medicamentos, cumprindo normas rígidas de ANVISA e órgãos internacionais.</p>
+                    <p><strong>Solução da Follow Advisor:</strong></p>
+                    <ul>
+                      <li>Estruturamos o sistema de qualidade. </li>
+                      <li>Criamos os fluxos de armazenamento e controle de temperatura. </li>
+                      <li>Conduzimos auditorias internas e externas até a homologação. </li>
+                    </ul>
+                    <p><strong>Resultados:</strong></p>
+                    <ul>
+                      <li>Homologação internacional para clientes estratégicos. </li>
+                      <li>Operação de armazenagem pronta para auditorias globais. </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Case 7 -->
+              <div class="case-card">
+                <div class="case-body">
+                  <h5 data-i18n="case7-title">Auditorias no Brasil e Exterior</h5>
+                  <div data-i18n-html="case7-html">
+                    <p><strong>Desafio:</strong> Uma empresa brasileira precisava qualificar fornecedores e transportadores no Brasil e no exterior, garantindo conformidade com padrões internacionais de GxP</p>
+                    <p><strong>Solução da Follow Advisor:</strong></p>
+                    <ul>
+                      <li>Conduzimos auditorias presenciais no exterior. </li>
+                      <li>Estabelecemos critérios de qualificação e compliance. </li>
+                      <li>Estruturamos relatórios técnicos validados por órgãos locais. </li>
+                    </ul>
+                    <p><strong>Resultados:</strong></p>
+                    <ul>
+                      <li>Fornecedores internacionais homologados com confiabilidade. </li>
+                      <li>Redução de riscos regulatórios em toda a cadeia global </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div> <!-- tab-content -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Diferenciais -->
+    <section id="diferenciais" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-i18n="advantages-main-title">Vantagens de contratar nossa consultoria</h2>
+                    <p class="lead" data-i18n="advantages-title">Por que escolher a Follow Advisor?</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 data-i18n="adv-card1-title">Experiência Especializada</h3>
+                        <p data-i18n="adv-card1-desc">Conhecimento especializado na área, oferecendo insights valiosos para sua empresa.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3 data-i18n="adv-card2-title">Objetividade</h3>
+                        <p data-i18n="adv-card2-desc">Perspectiva externa e objetiva, identificando problemas e propondo soluções sem envolvimento emocional.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3 data-i18n="adv-card3-title">Eficiência</h3>
+                        <p data-i18n="adv-card3-desc">Aceleração de processos, trazendo eficiência operacional e estratégica para seu negócio.</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3 data-i18n="adv-card4-title">Atualização</h3>
+                        <p data-i18n="adv-card4-desc">Melhores práticas, trazendo inovação e modernização para seus processos e operações.</p>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 data-i18n="adv-card5-title">Foco estratégico</h3>
+                        <p data-i18n="adv-card5-desc">Permitimos que sua empresa mantenha seu foco principal, enquanto lidamos com aspectos específicos.</p>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h3 data-i18n="adv-card6-title">Resolução de Problemas</h3>
+                        <p data-i18n="adv-card6-desc">Resolvemos desafios complexos e implementamos mudanças que trazem resultados reais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="equipe" class="py-5 bg-light">
+<section id="equipe" class="py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center mb-5">
+        <h2 class="section-title" data-i18n="our-team">Conheça nossa equipe</h2>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Pessoa 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="team-card position-relative">
+          <!-- link que torna o card inteiro clicável -->
+          <a href="pessoas/pessoa1.html" class="stretched-link" target="_blank" rel="noopener" aria-label="Abrir página da Pessoa 1"></a>
+
+          <div class="team-photo-wrap">
+            <img src="images/equipe/marcelo.jpeg" alt="Marcelo Gomes" class="team-photo">
+            <a class="team-linkedin" href="https://www.linkedin.com/in/marcelogomes1/" target="_blank" rel="noopener" aria-label="LinkedIn Marcelo Gomes">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C21.6 7.6 24 9.7 24 13.6V24h-5v-8.8c0-2.1-.75-3.6-2.63-3.6-1.44 0-2.3.97-2.68 1.9-.14.33-.17.79-.17 1.25V24H8V8z"/></svg>
+            </a>
+          </div>
+
+          <h3 class="team-name" data-i18n="member1-name">Marcelo Gomes</h3>
+          <p class="team-role" data-i18n="member1-role">Fundador e CEO</p>
+          <hr class="team-sep">
+          <ul class="team-meta">
+            <li><span>Expertise:</span> Supply chain e comércio internacional</li>
+            <li><span>Formação:</span> Graduação em Administração com Ênfase em Comércio Exterior – UNIP.</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Pessoa 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="team-card position-relative">
+          <a href="pessoas/pessoa2.html" class="stretched-link" target="_blank" rel="noopener" aria-label="Abrir página da Pessoa 2"></a>
+
+          <div class="team-photo-wrap">
+            <img src="img/team/pessoa2.jpg" alt="Pessoa 2" class="team-photo">
+            <a class="team-linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn Pessoa 2">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C21.6 7.6 24 9.7 24 13.6V24h-5v-8.8c0-2.1-.75-3.6-2.63-3.6-1.44 0-2.3.97-2.68 1.9-.14.33-.17.79-.17 1.25V24H8V8z"/></svg>
+            </a>
+          </div>
+
+          <h3 class="team-name" data-i18n="member2-name">Pessoa 2</h3>
+          <p class="team-role" data-i18n="member2-role">Cargo / Função</p>
+          <hr class="team-sep">
+          <ul class="team-meta">
+            <li><span>Expertise:</span> supply chain, indústria e qualidade.</li>
+            <li><span>Formação:</span> Eng. Produção – Unicamp; Green Belt.</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Pessoa 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="team-card position-relative">
+          <a href="pessoas/pessoa3.html" class="stretched-link" target="_blank" rel="noopener" aria-label="Abrir página da Pessoa 3"></a>
+
+          <div class="team-photo-wrap">
+            <img src="img/team/pessoa3.jpg" alt="Pessoa 3" class="team-photo">
+            <a class="team-linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn Pessoa 3">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C21.6 7.6 24 9.7 24 13.6V24h-5v-8.8c0-2.1-.75-3.6-2.63-3.6-1.44 0-2.3.97-2.68 1.9-.14.33-.17.79-.17 1.25V24H8V8z"/></svg>
+            </a>
+          </div>
+
+          <h3 class="team-name" data-i18n="member3-name">Pessoa 3</h3>
+          <p class="team-role" data-i18n="member3-role">Cargo / Função</p>
+          <hr class="team-sep">
+          <ul class="team-meta">
+            <li><span>Expertise:</span> marketing, marca e crescimento.</li>
+            <li><span>Formação:</span> Publicidade – PUC; Pós em Dados.</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Pessoa 4 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="team-card position-relative">
+          <a href="pessoas/pessoa4.html" class="stretched-link" target="_blank" rel="noopener" aria-label="Abrir página da Pessoa 4"></a>
+
+          <div class="team-photo-wrap">
+            <img src="img/team/pessoa4.jpg" alt="Pessoa 4" class="team-photo">
+            <a class="team-linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn Pessoa 4">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C21.6 7.6 24 9.7 24 13.6V24h-5v-8.8c0-2.1-.75-3.6-2.63-3.6-1.44 0-2.3.97-2.68 1.9-.14.33-.17.79-.17 1.25V24H8V8z"/></svg>
+            </a>
+          </div>
+
+          <h3 class="team-name" data-i18n="member4-name">Pessoa 4</h3>
+          <p class="team-role" data-i18n="member4-role">Cargo / Função</p>
+          <hr class="team-sep">
+          <ul class="team-meta">
+            <li><span>Expertise:</span> finanças corporativas e eficiência operacional.</li>
+            <li><span>Formação:</span> Economia – UFRJ; MBA – Insper.</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Pessoa 5 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="team-card position-relative">
+          <a href="pessoas/pessoa5.html" class="stretched-link" target="_blank" rel="noopener" aria-label="Abrir página da Pessoa 5"></a>
+
+          <div class="team-photo-wrap">
+            <img src="img/team/pessoa5.jpg" alt="Pessoa 5" class="team-photo">
+            <a class="team-linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn Pessoa 5">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C21.6 7.6 24 9.7 24 13.6V24h-5v-8.8c0-2.1-.75-3.6-2.63-3.6-1.44 0-2.3.97-2.68 1.9-.14.33-.17.79-.17 1.25V24H8V8z"/></svg>
+            </a>
+          </div>
+
+          <h3 class="team-name" data-i18n="member5-name">Pessoa 5</h3>
+          <p class="team-role" data-i18n="member5-role">Cargo / Função</p>
+          <hr class="team-sep">
+          <ul class="team-meta">
+            <li><span>Expertise:</span> projetos de TI, dados e automação.</li>
+            <li><span>Formação:</span> Sistemas de Informação – UFMG.</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Pessoa 6 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="team-card position-relative">
+          <a href="pessoas/pessoa6.html" class="stretched-link" target="_blank" rel="noopener" aria-label="Abrir página da Pessoa 6"></a>
+
+          <div class="team-photo-wrap">
+            <img src="img/team/pessoa6.jpg" alt="Pessoa 6" class="team-photo">
+            <a class="team-linkedin" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn Pessoa 6">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C21.6 7.6 24 9.7 24 13.6V24h-5v-8.8c0-2.1-.75-3.6-2.63-3.6-1.44 0-2.3.97-2.68 1.9-.14.33-.17.79-.17 1.25V24H8V8z"/></svg>
+            </a>
+          </div>
+
+          <h3 class="team-name" data-i18n="member6-name">Pessoa 6</h3>
+          <p class="team-role" data-i18n="member6-role">Cargo / Função</p>
+          <hr class="team-sep">
+          <ul class="team-meta">
+            <li><span>Expertise:</span> comercial, CRM e experiência do cliente.</li>
+            <li><span>Formação:</span> Administração – Mackenzie.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Contato -->
+    <section id="contato" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-i18n="contact-title">Fale Conosco</h2>
+                    <p class="lead" data-i18n="contact-subtitle">Estamos prontos para atender sua empresa</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-info">
+                        <div class="mb-4">
+                            <h3><i class="fas fa-map-marker-alt text-primary me-2"></i> <span data-i18n="contact-address">Endereço</span></h3>
+                            <p data-i18n="contact-address-value">Vinhedo - SP</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3><i class="fas fa-clock text-primary me-2"></i> <span data-i18n="contact-hours">Horário de Funcionamento</span></h3>
+                            <p data-i18n="contact-hours-value">Segunda a Sábado, 09:00 - 18:00</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3><i class="fas fa-globe text-primary me-2"></i> <span data-i18n="contact-website">Website</span></h3>
+                            <p>www.followadvisor.com</p>
+                        </div>
+                        
+                        <div>
+                            <h3><i class="fas fa-language text-primary me-2"></i> <span data-i18n="contact-service">Atendimento</span></h3>
+                            <p data-i18n="contact-service-value">Português, Inglês e Espanhol</p>
+                        </div>
+                        
+                        <div>
+                            <h3><i class="fas fa-language text-primary me-2"></i> <span data-i18n="telefone">Telefone</span></h3>
+                            <p data-i18n="telefone-numero"> +55 (19) 98408-8833</p>
+                        </div>
+                    </div>
+                </div>
+                
+                                    <div class="col-lg-6">
+                <form id="contactForm" class="contact-form">
+                    <div class="mb-3">
+                    <input type="text" class="form-control" id="name"
+                            name="name" placeholder="Nome" required>
+                    </div>
+
+                    <div class="mb-3">
+                    <input type="email" class="form-control" id="email"
+                            name="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="mb-3">
+                    <input type="tel" class="form-control" id="phone"
+                            name="phone" placeholder="Telefone">
+                    </div>
+
+                    <div class="mb-3">
+                    <input type="text" class="form-control" id="company"
+                            name="company" placeholder="Empresa">
+                    </div>
+
+                    <div class="mb-3">
+                    <input type="text" class="form-control" id="subject"
+                            name="subject" placeholder="Assunto" required>
+                    </div>
+
+                    <div class="mb-3">
+                    <textarea class="form-control" id="message" rows="5"
+                                name="message" placeholder="Mensagem" required></textarea>
+                    </div>
+
+                    <button type="submit" id="sendBtn" class="btn btn-primary w-100">
+                    Enviar Mensagem
+                    </button>
+                </form>
+                </div>
+
+                <!-- Importa EmailJS e o JS externo -->
+                <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                <script src="js/contact.js"></script>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="images/logo.png" alt="Follow Advisor Logo" height="60" class="mb-4 footer-logo">
+                    <p data-i18n="hero-title">Orientação que inspira!</p>
+                    <p>
+                        <a href="tel:+5519984088833" class="text-white text-decoration-none">
+                            <i class="fas fa-phone-alt"></i> +55 19 98408 8833
+                        </a>
+                        <br>
+                        <a href="https://wa.me/5519984088833" class="text-white text-decoration-none">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </p>
+                    <p>© 2024 Follow Advisor Ltda. Todos os direitos reservados.</p>
+                </div>
+                
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3>Links Rápidos</h3>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#equipe">Equipe</a></li>
+                        <li><a href="#presenca">Presença</a></li>
+                        <li><a href="#cases">Cases</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/followadvisor/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/followadvisor/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h3>Idioma</h3>
+                        <div class="language-selector-footer">
+                            <a href="#" class="lang-switch active" data-lang="pt">Português</a> | 
+                            <a href="#" class="lang-switch" data-lang="en">English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão de Retorno ao Topo -->
+    <a href="#" id="back-to-top" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!--Botao Whatsapp Fixo-->
+    <a href="https://wa.me/5519984088833" class="btn btn-success btn-sm whatsapp-button" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/i18n.js"></script>    
+    <script src="js/main.js"></script>
+    <script src="js/button-effects.js"></script>
+    <script src="js/hero-background.js"></script>
+    <style>
+.service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 20px;
+    background: none;
+}
+.service-icon img {
+    max-width: 120px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+    </style>
+</body>
+</html>

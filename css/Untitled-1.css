@@ -1,0 +1,20 @@
+/* ...existing code... */
+.service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px; /* altura fixa para alinhar todos os ícones */
+    margin-bottom: 20px;
+    background: none;
+}
+
+.service-icon img {
+    max-width: 80px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+/* ...existing code... */

@@ -1,0 +1,92 @@
+/* Estilos para o hero com título branco */
+#hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Efeitos para a barra de navegação */
+.navbar .nav-link {
+    position: relative;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #0078FF;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar .nav-link:hover:before {
+    width: 70%;
+}
+
+.navbar .nav-link:hover {
+    transform: translateY(-2px);
+}
+
+.navbar .nav-link.active:before {
+    width: 70%;
+}
+
+/* Estilos para informações de contato */
+.contact-info-header {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.contact-info-header a {
+    display: flex;
+    align-items: center;
+    color: #0078FF;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contact-info-header a:hover {
+    color: #0056b3;
+}
+
+.contact-info-header i {
+    margin-right: 5px;
+    font-size: 1.2rem;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+    color: white;
+    border-radius: 50px;
+    padding: 8px 15px;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    color: white;
+    transform: scale(1.05);
+}
+
+.whatsapp-button i {
+    margin-right: 5px;
+}
